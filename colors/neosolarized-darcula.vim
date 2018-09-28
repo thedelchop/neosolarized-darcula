@@ -1,6 +1,6 @@
-" Name:     NeoSolarized: Colorscheme for truecolor vim
+" Name:     NeoDarcula: Colorscheme for truecolor vim
 " Author:   iCyMind <icyminnd@gmail.com>
-" URL:      https://github.com/iCyMind/NeoSolarized
+" URL:      https://github.com/thedelchop/neosolarized-darcula
 " License:  MIT
 " Modified: Mon Sep 26 14:45:22 CST 2016
 
@@ -12,25 +12,25 @@
 " Solarized is a carefully designed selective contrast colorscheme with dual
 " light and dark modes that runs in both GUI, 256 and 16 color modes.
 "
-" But the origin solarized does not support truecolor terminal. NeoSolarized
-" is a fixed colorscheme for neovim/vim which running in truecolor supported
+" But the origin solarized does not support truecolor terminal.
+" NeoSolarizedDarcula is a fixed colorscheme for neovim/vim which running in truecolor supported
 " terminal.
 "
 " ---------------------------------------------------------------------
 " OPTIONS:
 " ---------------------------------------------------------------------
-" g:neosolarized_contrast
-" g:neosolarized_visibility
-" g:neosolarized_diffmode
-" g:neosolarized_termtrans
-" g:neosolarized_bold
-" g:neosolarized_underline
-" g:neosolarized_italic
+" g:neosolarized_darcula_contrast
+" g:neosolarized_darcula_visibility
+" g:neosolarized_darcula_diffmode
+" g:neosolarized_darcula_termtrans
+" g:neosolarized_darcula_bold
+" g:neosolarized_darcula_underline
+" g:neosolarized_darcula_italic
 "
 " ---------------------------------------------------------------------
 " INSTALLATION:
 " ---------------------------------------------------------------------
-" move the NeoSolarized.vim to your VIMRUNTIME by manual or plugin manager
+" move the NeoSolarizedDarcula.vim to your VIMRUNTIME by manual or plugin manager
 "
 " MODIFY VIMRC:
 "
@@ -39,13 +39,13 @@
 "
 "     syntax enable
 "     set background=dark
-"     colorscheme NeoSolarized
+"     colorscheme NeoSolarizedDarcula
 "
 " or, for the light background mode of Solarized:
 "
 "     syntax enable
 "     set background=light
-"     colorscheme NeoSolarized
+"     colorscheme NeoSolarizedDarcula
 "
 " I like to have a different background in GUI and terminal modes, so I can use
 " the following if-then. However, I find vim's background autodetection to be
@@ -108,14 +108,14 @@
 " Default option values"{{{
 " ---------------------------------------------------------------------
 
-let g:neosolarized_contrast = get(g:, "neosolarized_contrast", "normal")
-let g:neosolarized_visibility = get(g:, "neosolarized_visibility", "normal")
-let g:neosolarized_diffmode = get(g:, "neosolarized_diffmode", "normal")
-let g:neosolarized_bold = get(g:, "neosolarized_bold", 1)
-let g:neosolarized_underline = get(g:, "neosolarized_underline", 1)
-let g:neosolarized_italic = get(g:, "neosolarized_italic", 0)
-let g:neosolarized_termtrans = get(g:, "neosolarized_termtrans", 0)
-let g:neosolarized_vertSplitBgTrans = get(g:, "neosolarized_vertSplitBgTrans", 1)
+let g:neosolarized_darcula_contrast = get(g:, "neosolarized_darcula_contrast", "normal")
+let g:neosolarized_darcula_visibility = get(g:, "neosolarized_darcula_visibility", "normal")
+let g:neosolarized_darcula_diffmode = get(g:, "neosolarized_darcula_diffmode", "normal")
+let g:neosolarized_darcula_bold = get(g:, "neosolarized_darcula_bold", 1)
+let g:neosolarized_darcula_underline = get(g:, "neosolarized_darcula_underline", 1)
+let g:neosolarized_darcula_italic = get(g:, "neosolarized_darcula_italic", 0)
+let g:neosolarized_darcula_termtrans = get(g:, "neosolarized_darcula_termtrans", 0)
+let g:neosolarized_darcula_vertSplitBgTrans = get(g:, "neosolarized_darcula_vertSplitBgTrans", 1)
 
 "}}}
 
@@ -125,7 +125,7 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let colors_name = "NeoSolarized"
+let colors_name = "NeoSolarizedDarcula"
 
 "}}}
 
@@ -133,24 +133,43 @@ let colors_name = "NeoSolarized"
 " ---------------------------------------------------------------------
 "
 " Set gui and terminal at the same time.
-    let s:gui_mode       = "gui"
-    let s:gui_base03      = "#002b36"
-    let s:gui_base02      = "#073642"
-    let s:gui_base01      = "#586e75"
-    let s:gui_base00      = "#657b83"
-    let s:gui_base0       = "#839496"
-    let s:gui_base1       = "#93a1a1"
-    let s:gui_base2       = "#eee8d5"
-    let s:gui_base3       = "#fdf6e3"
-    let s:gui_yellow      = "#b58900"
-    let s:gui_orange      = "#cb4b16"
-    let s:gui_red         = "#dc322f"
-    let s:gui_magenta     = "#d33682"
-    let s:gui_violet      = "#6c71c4"
-    let s:gui_blue        = "#268bd2"
-    let s:gui_cyan        = "#2aa198"
-    let s:gui_green       = "#719e07" "experimental
-    "let s:green       = "#859900" "original
+" Solarized Darcula
+    let s:gui_mode    = "gui"
+    let s:gui_base03  = "#323232"
+    let s:gui_base02  = "#3D3F40"
+    let s:gui_base01  = "#525657"
+    let s:gui_base00  = "#6A6D6F"
+    let s:gui_base0   = "#828687"
+    let s:gui_base1   = "#9DA1A2"
+    let s:gui_base2   = "#B8BBBD"
+    let s:gui_base3   = "#D2D8D9"
+    let s:gui_yellow  = "#B68800"
+    let s:gui_orange  = "#E05F27"
+    let s:gui_red     = "#E74A93"
+    let s:gui_magenta = "#E74A93"
+    let s:gui_violet  = "#797FD4"
+    let s:gui_blue    = "#288DD5"
+    let s:gui_cyan    = "#15968D"
+    let s:gui_green   = "#629655"
+
+    " Solarized Dark
+    " let s:gui_mode       = "gui"
+    " let s:gui_base03      = "#002b36"
+    " let s:gui_base02      = "#073642"
+    " let s:gui_base01      = "#586e75"
+    " let s:gui_base00      = "#657b83"
+    " let s:gui_base0       = "#839496"
+    " let s:gui_base1       = "#93a1a1"
+    " let s:gui_base2       = "#eee8d5"
+    " let s:gui_base3       = "#fdf6e3"
+    " let s:gui_yellow      = "#b58900"
+    " let s:gui_orange      = "#cb4b16"
+    " let s:gui_red         = "#dc322f"
+    " let s:gui_magenta     = "#d33682"
+    " let s:gui_violet      = "#6c71c4"
+    " let s:gui_blue        = "#268bd2"
+    " let s:gui_cyan        = "#2aa198"
+    " let s:gui_green       = "#719e07" "experimental
 
     let s:term_mode       = "cterm"
     let s:term_base03      = "8"
@@ -186,7 +205,7 @@ let colors_name = "NeoSolarized"
 
 " Background value based on termtrans setting "{{{
 " ---------------------------------------------------------------------
-if (has("gui_running") || g:neosolarized_termtrans == 0)
+if (has("gui_running") || g:neosolarized_darcula_termtrans == 0)
     let s:gui_back        = s:gui_base03
     let s:term_back        = s:term_base03
 else
@@ -236,7 +255,7 @@ endif
 
 " Optional contrast schemes "{{{
 " ---------------------------------------------------------------------
-if g:neosolarized_contrast == "high"
+if g:neosolarized_darcula_contrast == "high"
     let s:gui_base01      = s:gui_base00
     let s:gui_base00      = s:gui_base0
     let s:gui_base0       = s:gui_base1
@@ -251,7 +270,7 @@ if g:neosolarized_contrast == "high"
     let s:term_base2       = s:term_base3
     let s:term_back        = s:term_back
 endif
-if g:neosolarized_contrast == "low"
+if g:neosolarized_darcula_contrast == "low"
     let s:gui_back        = s:gui_base02
     let s:term_back        = s:term_base02
     let s:ou          = ",underline"
@@ -260,7 +279,7 @@ endif
 
 " Overrides dependent on user specified values and environment "{{{
 " ---------------------------------------------------------------------
-if (g:neosolarized_bold == 0 || &t_Co == 8 )
+if (g:neosolarized_darcula_bold == 0 || &t_Co == 8 )
     let s:b           = ""
     let s:bb          = ",bold"
 else
@@ -268,13 +287,13 @@ else
     let s:bb          = ""
 endif
 
-if g:neosolarized_underline == 0
+if g:neosolarized_darcula_underline == 0
     let s:u           = ""
 else
     let s:u           = ",underline"
 endif
 
-if g:neosolarized_italic == 0
+if g:neosolarized_darcula_italic == 0
     let s:i           = ""
 else
     let s:i           = ",italic"
@@ -451,10 +470,10 @@ exe "hi! Todo"           .s:fmt_bold   .s:fg_magenta.s:bg_none
 
 " Extended highlighting "{{{
 " ---------------------------------------------------------------------
-if  (g:neosolarized_visibility=="high")
+if  (g:neosolarized_darcula_visibility=="high")
     exe "hi! SpecialKey" .s:fmt_revr   .s:fg_red    .s:bg_none
     exe "hi! NonText"    .s:fmt_bold   .s:fg_red    .s:bg_none
-elseif  (g:neosolarized_visibility=="low")
+elseif  (g:neosolarized_darcula_visibility=="low")
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base02 .s:bg_none
     exe "hi! NonText"    .s:fmt_bold   .s:fg_base02 .s:bg_none
 else
@@ -472,7 +491,7 @@ exe "hi! MoreMsg"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! ModeMsg"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! LineNr"         .s:fmt_none   .s:fg_base01 .s:bg_base02
 exe "hi! Question"       .s:fmt_bold   .s:fg_cyan   .s:bg_none
-if (g:neosolarized_vertSplitBgTrans == 1)
+if (g:neosolarized_darcula_vertSplitBgTrans == 1)
     exe "hi! VertSplit"  .s:fmt_none   .s:fg_base00 .s:bg_none
 else
     exe "hi! VertSplit"  .s:fmt_none   .s:fg_base00 .s:bg_base00
@@ -484,12 +503,12 @@ exe "hi! WildMenu"       .s:fmt_none   .s:fg_base2  .s:bg_base02 .s:fmt_revbb
 exe "hi! Folded"         .s:fmt_bold   .s:fg_base0  .s:bg_base02  .s:sp_base03
 exe "hi! FoldColumn"     .s:fmt_none   .s:fg_base0  .s:bg_base02
 
-if (g:neosolarized_diffmode=="high")
+if (g:neosolarized_darcula_diffmode=="high")
     exe "hi! DiffAdd"        .s:fmt_revr   .s:fg_green  .s:bg_none
     exe "hi! DiffChange"     .s:fmt_revr   .s:fg_yellow .s:bg_none
     exe "hi! DiffDelete"     .s:fmt_revr   .s:fg_red    .s:bg_none
     exe "hi! DiffText"       .s:fmt_revr   .s:fg_blue   .s:bg_none
-elseif  (g:neosolarized_diffmode=="low")
+elseif  (g:neosolarized_darcula_diffmode=="low")
     exe "hi! DiffAdd"        .s:fmt_undr   .s:fg_green  .s:bg_none   .s:sp_green
     exe "hi! DiffChange"     .s:fmt_undr   .s:fg_yellow .s:bg_none   .s:sp_yellow
     exe "hi! DiffDelete"     .s:fmt_bold   .s:fg_red    .s:bg_none
