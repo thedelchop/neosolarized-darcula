@@ -1,8 +1,8 @@
-" Name:     NeoDarcula: Colorscheme for truecolor vim
-" Author:   iCyMind <icyminnd@gmail.com>
+" Name:     NeoSolarizedDarcula: Colorscheme for truecolor vim
+" Author:   Joseph DelCioppio <joseph.delcioppio@gmail.com>
 " URL:      https://github.com/thedelchop/neosolarized-darcula
 " License:  MIT
-" Modified: Mon Sep 26 14:45:22 CST 2016
+" Modified: Mon Sep 28 14:45:22 CST 2018
 
 " Usage "{{{
 "
@@ -151,25 +151,6 @@ let colors_name = "NeoSolarizedDarcula"
     let s:gui_blue    = "#288DD5"
     let s:gui_cyan    = "#15968D"
     let s:gui_green   = "#629655"
-
-    " Solarized Dark
-    " let s:gui_mode       = "gui"
-    " let s:gui_base03      = "#002b36"
-    " let s:gui_base02      = "#073642"
-    " let s:gui_base01      = "#586e75"
-    " let s:gui_base00      = "#657b83"
-    " let s:gui_base0       = "#839496"
-    " let s:gui_base1       = "#93a1a1"
-    " let s:gui_base2       = "#eee8d5"
-    " let s:gui_base3       = "#fdf6e3"
-    " let s:gui_yellow      = "#b58900"
-    " let s:gui_orange      = "#cb4b16"
-    " let s:gui_red         = "#dc322f"
-    " let s:gui_magenta     = "#d33682"
-    " let s:gui_violet      = "#6c71c4"
-    " let s:gui_blue        = "#268bd2"
-    " let s:gui_cyan        = "#2aa198"
-    " let s:gui_green       = "#719e07" "experimental
 
     let s:term_mode       = "cterm"
     let s:term_base03      = "8"
